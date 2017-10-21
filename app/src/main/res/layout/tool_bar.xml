@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/tv_top"
+                android:text="MEMO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/toolbar_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/toolbar_back"
+                android:foreground="?attr/selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/toolbar_menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/toolbar_menu"
+                android:foreground="?attr/selectableItemBackground" />
+
+        </android.support.v7.widget.Toolbar>
+</LinearLayout>

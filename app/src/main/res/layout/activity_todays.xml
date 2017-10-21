@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            android:text="0"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/day"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            android:text="0"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="#D5D5D5" />
+
+    <TextView
+        android:id="@+id/Schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="□ 학교 행사명"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/activities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="활동내용"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#D5D5D5" />
+
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/activitiesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/edittext_border"
+        android:ems="16"
+        android:hint="활동내용(주제)을 입력하세요"
+        android:textSize="15dp"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:textSelectHandle="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/impression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="소감 및 느낀점"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#D5D5D5" />
+
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/impressionInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/edittext_border"
+        android:ems="16"
+        android:hint="소감을 입력하세요"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:textSize="15dp"
+        android:textSelectHandle="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/save_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="저장" />
+</LinearLayout>
